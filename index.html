@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project 3</title>
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+
+		<!-- <// TITLE //> -->
+		
+		<div class="title">
+			<h1>The Code Review</h1>
+		</div>
+	
+		<!-- <// HEADER //> -->
+		
+ 		<div class="main-content">
+			<div class="header">
+				<h2>Sign up for our newsletter</h2>
+				<p>Get the latest news on how your code is doing
+				 right in your inbox.</p>
+			</div>
+
+			<!-- <// CONTACT //> -->
+
+			<div class="contact">
+				<form action="index.html" class="contact-form">
+				  <fieldset class="contact-field">
+						<legend>Contact Informaton</legend>
+						<label for="name">Full Name</label>
+						<input placeholder="Required" type="text" id="name" name="full-name" 
+						 			 aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+">
+					
+						<label for="email">Email Address</label>
+						<input placeholder="Required" type="email" id="email" name="email-address" required>
+					
+						<label for="phone">Phone Number</label>
+						<input placeholder="Incl. Area Code" type="tel" id="phone" name="phone-number">
+					
+						<label for="address">Street Address</label>
+						<input type="text" id="address" name="street-address">
+					
+						<label for="city">City</label>
+						<input type="text" id="city" name="city">
+					
+						<label for="state">State</label>
+						<select id="state">
+							<option id="choose-state">Choose State</option>
+							<option id="louisiana">Louisiana</option>
+							<option id="michigan">Michigan</option>
+							<option id="new-york">New York</option>
+							<option id="ohio">Ohio</option>
+							<option id="rhode-island">Rhode Island</option>
+							<option id="west-virginia">West Virginia</option>
+						</select>
+					
+						<label for="zip">Zip Code</label>
+						<input type="text" id="zip" name="zip-code">
+						
+					</fieldset>			
+				</form>
+			</div>
+ 
+			<!-- <// NEWSLETTER //> -->
+	
+			<div class="newsletter">
+			  <form action="index.html" class="newsletter-form">
+			 	  <fieldset class="newsletter-field">
+					  <legend>Newsletter</legend>	
+						<label class="newsletter-label">Select the newsletters you would like to receive</label><br />
+					
+						<input type="checkbox" id="html" name="receive" value="html-news">
+						<label class="light" for="html">HTML News</label><br />
+					
+						<input type="checkbox" id="css" name="receive" value="css-news">
+						<label class="light" for="css">CSS News</label><br />
+					
+						<input type="checkbox" id="javascript" name="receive" value="javascript-news">
+						<label class="light" for="javascript">JavaScript News</label><br />
+					
+						<label class="newsletter-format">Newsletter format</label>
+						<input type="radio" name="newsletter-format" value="HTML">
+						<label class="dark">HTML</label><br />
+					
+						<input type="radio" class="plain" name="newsletter-format" value="plain-text">
+						<label>Plain text</label><br />
+					
+						<label class="other-topics" for="other-topics">Other topics you'd like to hear about</label><br />
+						<textarea id="other-topics" name="other-topics">
+						</textarea><br />
+					
+						<input type="checkbox" id="associates" name="associates" value="associates">
+					  <label class="associates" for="associates">Check box if you would like to receive news from our associates</label><br />
+					
+						<button type="submit" id="sign_up" name="sign_up" value="Sign Up">
+						Sign Up
+					  </button>
+					  
+				  </fieldset>
+				</form>
+			</div>
+
+			<!-- <// FOOTER //> -->
+		
+			<div class="footer">
+				<p>Copyright The Code Review</p>
+			</div>
+		</div>
+	</body>
+</html>

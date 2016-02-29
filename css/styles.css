@@ -145,7 +145,7 @@
 	padding: 12px 20px;
 	}
 	
-	#sign_up {
+	button {
 	display: inline-block;
 	height: 60px;
 	border-radius: 5px;
@@ -183,7 +183,7 @@
 	color: #F2F2F2;
 	}
 	
-	#sign_up:hover {
+	button:hover {
 	transition: background-color 1s linear;
 	background-color: #51A39D;
 	}
@@ -203,7 +203,30 @@
 		max-width: 60%;
 		margin: auto; 
 		}
-		
+
+		.contact-field label {
+			display: block;
+			width: 25%;
+			float: left;
+			margin-top: 14px;	
+		}
+
+		#full-name {
+			margin-top: 20px;
+		}
+
+		.contact-field input, .contact-field select {
+			display: block;
+			max-width: 75%;
+		}
+
+		#zip {
+			width: 30%;
+		}
+
+		.newsletter-label {
+			width: 100%;
+		}
 	}
 
 	

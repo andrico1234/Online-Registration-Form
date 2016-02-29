@@ -28,15 +28,15 @@
 			<!-- <// CONTACT //> -->
 
 			<div class="contact">
-				<form action="index.html" class="contact-form">
+				<form action="index.html" method="POST" class="contact-form">
 				  <fieldset class="contact-field">
 						<legend>Contact Informaton</legend>
-						<label for="name">Full Name</label>
+						<label for="name" id="full-name">Full Name</label>
 						<input placeholder="Required" type="text" id="name" name="full-name" 
 						 			 aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+">
 					
 						<label for="email">Email Address</label>
-						<input placeholder="Required" type="email" id="email" name="email-address" required>
+						<input placeholder="Required" type="email" id="email" name="email-address" aria-required="true">
 					
 						<label for="phone">Phone Number</label>
 						<input placeholder="Incl. Area Code" type="tel" id="phone" name="phone-number">
@@ -49,13 +49,13 @@
 					
 						<label for="state">State</label>
 						<select id="state">
-							<option id="choose-state">Choose State</option>
-							<option id="louisiana">Louisiana</option>
-							<option id="michigan">Michigan</option>
-							<option id="new-york">New York</option>
-							<option id="ohio">Ohio</option>
-							<option id="rhode-island">Rhode Island</option>
-							<option id="west-virginia">West Virginia</option>
+							<option value="choose-state">Choose State</option>
+							<option value="louisiana">Louisiana</option>
+							<option value="michigan">Michigan</option>
+							<option value="new-york">New York</option>
+							<option value="ohio">Ohio</option>
+							<option value="rhode-island">Rhode Island</option>
+							<option value="west-virginia">West Virginia</option>
 						</select>
 					
 						<label for="zip">Zip Code</label>
@@ -68,7 +68,7 @@
 			<!-- <// NEWSLETTER //> -->
 	
 			<div class="newsletter">
-			  <form action="index.html" class="newsletter-form">
+			  <form action="index.html" method="POST" class="newsletter-form">
 			 	  <fieldset class="newsletter-field">
 					  <legend>Newsletter</legend>	
 						<label class="newsletter-label">Select the newsletters you would like to receive</label><br />
@@ -83,11 +83,11 @@
 						<label class="light" for="javascript">JavaScript News</label><br />
 					
 						<label class="newsletter-format">Newsletter format</label>
-						<input type="radio" name="newsletter-format" value="HTML">
-						<label class="dark">HTML</label><br />
+						<input type="radio" id ='newsletter' name="newsletter-format" value="HTML">
+						<label class="dark" for="newsletter">HTML</label><br />
 					
-						<input type="radio" class="plain" name="newsletter-format" value="plain-text">
-						<label>Plain text</label><br />
+						<input type="radio" class="plain" id='plain' name="newsletter-format" value="plain-text">
+						<label for='plain'>Plain text</label><br />
 					
 						<label class="other-topics" for="other-topics">Other topics you'd like to hear about</label><br />
 						<textarea id="other-topics" name="other-topics">
@@ -96,7 +96,7 @@
 						<input type="checkbox" id="associates" name="associates" value="associates">
 					  <label class="associates" for="associates">Check box if you would like to receive news from our associates</label><br />
 					
-						<button type="submit" id="sign_up" name="sign_up" value="Sign Up">
+						<button type="submit" value="Submit">
 						Sign Up
 					  </button>
 					  
